@@ -10,8 +10,11 @@ let temp = tempMinMax();
 let tempMin = temp[0];
 let tempMax = temp[1];
 
-console.log(tempMin, tempMax); // Funciona, forma ES5
+console.log("1: ", tempMin, tempMax); // Funciona, forma ES5
 
-// TODO: No modifiques la función. Modificar el código solamente a partir de aquí. Usa el operador de desestructuración para asignar el valor que retorna la función tempMinMax a las variables tempDestructMin y tempDestructMax
+// TODO: No modifiques la función. Modificar el código solamente a partir de aquí.
+//       Usa el operador de desestructuración para asignar el valor que retorna la
+//       función tempMinMax a las variables tempDestructMin y tempDestructMax
 
-//console.log(tempDestructMin, tempDestructMax) // -1 20
+const [tempDestructMin, tempDestructMax] = [...temp];
+console.log("2: ", tempDestructMin, tempDestructMax); // -1 20
